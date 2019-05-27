@@ -1,0 +1,321 @@
+//GENERAL
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+
+//HOME CSS
+.container{
+    animation:fadeInDown 3s;
+    .main-nav{
+        .navbar{
+            padding: 0 !important;
+            .navbar-nav{
+                .active>a{
+                    color:$primaryColor !important;
+                }
+            }
+            
+        }
+    }
+}
+.carousel-caption{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: initial;
+    right: initial;
+    padding: 0;
+    transform: translate(-50%, -50%);
+}
+h2{
+    font-size: 3.3rem;
+    animation:bounceInRight 2s;
+}
+.icon{
+    color:$iconColor;
+}
+.para{
+    animation:bounceInRight 2s;
+}
+.btn-outline-secondary{
+    color: $secondryColor;
+    padding: 0.5rem 2rem !important;
+    border-radius: 0;
+}
+.nav-info{
+    box-shadow: 0.1rem 0.2rem 0.2rem rgba(0,0,0,.1) !important;
+}
+.margin-section{
+    margin-bottom: 5.5rem;
+}
+.section-two{
+    padding: 5.5rem 0rem;
+    .card{
+        border:0;
+    }
+    .card-body{
+        padding: 1.5rem 0.3rem;
+    }
+}
+
+//COLORS
+.gray-font{
+    color: $grayFont;
+}
+.blue-font{
+    color: $primaryColor;
+}
+.bg-gray{
+    background-color: $grayColor;
+}
+
+//HR CSS
+.blue-line{
+    @include borderBottom (2px , solid , $primaryColor ,.8rem ,0 , 1.5rem ,0 ,3.5rem);
+}
+.white-line{
+    @include borderBottom(1px , solid , $secondryColor ,0 ,0 , 0 ,0 ,2.6rem);
+    margin: 0 auto;
+}
+.section4{
+    .rate-padding{
+        padding: 2.1rem 0 3rem;
+    }
+}
+.section4 , .section6 , .blue-bg{
+    background-color: $primaryColor;
+    color: $secondryColor;
+}
+.carousel-control-next, .carousel-control-prev {
+    opacity: 1 !important;
+}
+.send-btn{
+    padding: .5rem 2rem;
+}
+//FOOTER
+footer{
+    background-color: $grayFooterColor;
+    color: $secondryColor;
+    h4, i{
+        color: $primaryColor;
+    }
+    .mini-footer{
+        background-color: $blackColor;
+    }
+}
+//OWL SLIDER
+.owl-prev , .owl-next{
+    float: right;
+   margin-top: 2rem;
+    span{
+        background-color: $primaryColor;
+        color: $secondryColor;
+        padding: .5rem;
+        margin-right: 1rem;
+    } 
+}
+
+// HOVER
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}  
+.middle-icon {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+.image:hover {   
+    opacity: 0.6;
+}
+.position-relative:hover .middle-icon{
+    opacity: 1;
+}
+.input-padding{
+    padding-bottom: 10rem;
+}
+.img-padding{
+    padding: 0;
+}
+.width{
+    width: 100%;
+}
+.icon-font{
+    font-size: 2.3rem;
+}
+
+//MEDIA 
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 10px;
+    }
+    .nav-info{
+        display: none;
+    }
+    .center{
+        text-align: center !important;
+    }
+    .padding{
+        padding: 1rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .rate-padding {
+        padding: 1.5rem 0 1.5rem !important;
+    }
+    .hide{
+        display: none;
+    }
+}
+
+//CONTACT US CSS
+#google_canvas{
+    height: 25rem;
+}
+
+//NEWS CSS
+.date{
+    background-color: $primaryColor;
+    padding: .5rem 1.6rem;
+    color: $secondryColor;
+    top:42%;
+}
+.icon-search{
+    right: 5%;
+    top: 24%;
+    color: $iconColor;
+}
+
+//FONTS
+@include fontSet(openSans-regular ,"../fonts/OpenSans-Regular.ttf");
+@include fontSet(OpenSans-lightitalic ,"../fonts/OpenSans-LightItalic.ttf");
+@include fontSet(openSans-bold ,"../fonts/OpenSans-Bold.ttf");
+@include fontSet(openSans-semibold ,"../fonts/OpenSans-SemiBold.ttf");
+@include fontSet (raleway-semibold , "../fonts/Raleway-SemiBold.ttf");
+@include fontSet(play ,"../fonts/Play-Regular.ttf");
+@include fontSet(playbold ,"../fonts/Play-Bold.ttf");
+@include fontSet(HindSiliguri-light ,"../fonts/HindSiliguri-Light.ttf");
+
+.open-sans-regular-big{
+    font-family: openSans-regular;
+    font-size: 1.05rem;
+}
+.open-sans-regular-small{
+    font-family: openSans-regular;
+    font-size: .8rem;
+}
+.open-sans-lightitalic {
+    font-family: OpenSans-lightitalic;
+}
+.open-sans-bold {
+    font-family: openSans-bold;
+}
+.open-sans-semi-bold {
+    font-family: openSans-semibold;
+}
+.play {
+    font-family: play;
+    font-size: 1rem;
+}
+.play-big {
+    font-family: play;
+    font-size: 1.2rem;
+}
+.play-bold{
+    font-family: playbold;
+    font-size: 1.3rem;
+}
+.play-bold-big{
+    font-family: playbold;
+    font-size: 2rem;
+}
+.raleway-semi-bold{
+   font-family: raleway-semibold;
+   font-size: 2.4rem;
+}
+.hindSiliguri-light{
+    font-family: HindSiliguri-light;
+ }
+ 
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+@keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  }
+  @keyframes bounceInRight {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(3000px, 0, 0);
+      transform: translate3d(3000px, 0, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(-25px, 0, 0);
+      transform: translate3d(-25px, 0, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(-5px, 0, 0);
+      transform: translate3d(-5px, 0, 0);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  

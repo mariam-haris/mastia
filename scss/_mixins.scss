@@ -1,0 +1,16 @@
+@mixin border ($px , $solid ,$color , $margintop , $marginright , $marginbottom , $marginleft ,$width ) {
+    border: $px $solid $color; 
+    margin: $margintop  $marginright  $marginbottom $marginleft;
+    width: $width;
+} 
+@mixin borderBottom ($px , $solid ,$color , $margintop , $marginright , $marginbottom , $marginleft ,$width ) {
+    border-bottom: $px $solid $color; 
+    margin: $margintop  $marginright  $marginbottom $marginleft;
+    width: $width;
+} 
+@mixin fontSet ($fontName , $fontUrl) {
+    @font-face{
+        font-family: $fontName;
+        src:url($fontUrl);
+    }
+}
